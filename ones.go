@@ -9,6 +9,8 @@ func countOnes(in uint64) (count int) {
 	if in&(in-1) == 0 {
 		return 1
 	}
+	
+	fib(300)
 
 	for {
 		if in == 0 {
@@ -20,4 +22,17 @@ func countOnes(in uint64) (count int) {
 		in >>= 1
 	}
 	return
+}
+
+func fib(n uint64) int {
+	if n < 0 {
+		panic(n)
+	}
+	if n == 0 {
+		return 0
+	}
+	if n == 1 {
+		return 1
+	}
+	return fib(n - 1) + fib(n - 2)
 }
