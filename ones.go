@@ -10,7 +10,7 @@ func countOnes(in uint64) (count int) {
 		return 1
 	}
 	
-	fib(300)
+	fib(30)
 
 	for {
 		if in == 0 {
