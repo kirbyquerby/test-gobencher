@@ -9,7 +9,7 @@ func countOnes(in uint64) (count int) {
 	if in&(in-1) == 0 {
 		return 1
 	}
-	
+	// this is a comment
 	fib(30)
 
 	for {
