@@ -4,6 +4,7 @@ package exhibit
 // Similar to POPCOUNT, or commonly known as Hamming distance.
 
 func countOnes(in uint64) (count int) {
+	// trigger benchmarking
 	if in == 0 {
 		return 0
 	}
